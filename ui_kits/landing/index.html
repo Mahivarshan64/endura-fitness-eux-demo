@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mr &amp; Mrs. Muscle's Gym — Landing</title>
+<link rel="stylesheet" href="../../colors_and_type.css" />
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--canvas); color: var(--fg1); }
+  body { font-family: var(--font-body); }
+  button { font-family: var(--font-body); }
+  a { color: inherit; }
+
+  /* Responsive helpers used inline by components */
+  @media (max-width: 880px) {
+    .mmm-desktop-nav { display: none !important; }
+    .mmm-mobile-only { display: inline-flex !important; }
+    .mmm-hide-mobile { display: none !important; }
+    .mmm-hero-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+    .mmm-split-grid { grid-template-columns: 1fr !important; }
+    .mmm-footer-grid { grid-template-columns: 1fr 1fr !important; gap: 32px !important; }
+  }
+
+  /* prevent horizontal scroll from translateX on carousel track */
+  .mmm-testimonial-track { will-change: transform; }
+
+  /* light scrollbar on dark */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: var(--canvas); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 6px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--border-hot); }
+
+  /* Motion Principles */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s var(--ease-out) forwards;
+  }
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  
+  /* Bento Layout Classes */
+  .mmm-bento-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+  @media (min-width: 881px) {
+    .mmm-bento-grid {
+      grid-template-columns: repeat(12, 1fr);
+    }
+    .mmm-bento-card-0 { grid-column: span 7; }
+    .mmm-bento-card-1 { grid-column: span 5; }
+    .mmm-bento-card-2 { grid-column: span 5; }
+    .mmm-bento-card-3 { grid-column: span 7; }
+  }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="Icons.jsx"></script>
+<script type="text/babel" src="Button.jsx"></script>
+<script type="text/babel" src="Navbar.jsx"></script>
+<script type="text/babel" src="Hero.jsx"></script>
+<script type="text/babel" src="Offerings.jsx"></script>
+<script type="text/babel" src="Testimonials.jsx"></script>
+<script type="text/babel" src="LocationFooter.jsx"></script>
+<script type="text/babel" src="About.jsx"></script>
+<script type="text/babel" src="Contact.jsx"></script>
+<script type="text/babel" src="Pricing.jsx"></script>
+<script type="text/babel" src="Schedule.jsx"></script>
+<script type="text/babel" src="Gallery.jsx"></script>
+<script type="text/babel" src="Faq.jsx"></script>
+<script type="text/babel" src="Cta.jsx"></script>
+<script type="text/babel">
+  const { useState } = React;
+
+  window.navigateTo = (page) => window.dispatchEvent(new CustomEvent("navigate", { detail: page }));
+
+  function LandingPage() {
+    const [active, setActive] = useState("Home");
+
+    React.useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [active]);
+
+    React.useEffect(() => {
+      const handleNav = (e) => setActive(e.detail);
+      window.addEventListener("navigate", handleNav);
+      return () => window.removeEventListener("navigate", handleNav);
+    }, []);
+
+    return (
+      <div data-screen-label="Landing">
+        <Navbar activeLink={active} onLinkClick={setActive} />
+        <main>
+          {active === "Home" && (
+            <>
+              <Hero />
+              <Offerings />
+              <SchedulePage />
+              <Testimonials />
+              <Faq />
+              <Cta />
+            </>
+          )}
+          {active === "Pricing" && (
+            <>
+              <Pricing />
+              <Cta />
+            </>
+          )}
+          {active === "Gallery" && (
+            <>
+              <Gallery />
+              <Cta />
+            </>
+          )}
+          {active === "About" && (
+            <>
+              <About />
+              <Cta />
+            </>
+          )}
+          {active === "Contact" && <Contact />}
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById("app")).render(<LandingPage />);
+</script>
+</body>
+</html>
