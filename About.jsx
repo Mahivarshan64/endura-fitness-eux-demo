@@ -73,7 +73,7 @@ function About() {
               border: "1px solid var(--border)",
               boxShadow: "0 24px 48px -20px rgba(0, 0, 0, 0.5)",
             }}>
-              <img src="../../assets/gym_interior_about_1780129679707.png" alt="Gym Overview" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              <img src="./assets/gym_interior_about_1780129679707.png" alt="Gym Overview" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             </div>
           </div>
         </div>
@@ -127,3 +127,4 @@ function About() {
   );
 }
 window.About = About;
+

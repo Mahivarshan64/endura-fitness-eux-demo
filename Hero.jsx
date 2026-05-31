@@ -21,7 +21,7 @@ function HatchedImage({ label, height = "100%", accent = false }) {
       {/* hatch fill */}
       <div style={{
         position: "absolute", inset: 0,
-        backgroundImage: "url('../../assets/hatch.svg')",
+        backgroundImage: "url('./assets/hatch.svg')",
         backgroundSize: "40px 40px",
         opacity: 0.6,
       }} />
@@ -119,11 +119,11 @@ function Hero() {
             height: "clamp(400px, 60vh, 540px)",
           }}>
             <div style={{ gridRow: "1 / span 2", position: "relative", overflow: "hidden", borderRadius: 12 }}>
-              <img src="../../assets/hero_free_weights_1780130628705.png" alt="Free Weights" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              <img src="./assets/hero_free_weights_1780130628705.png" alt="Free Weights" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(11,11,11,0.8), transparent 50%)" }} />
             </div>
             <div style={{ position: "relative", overflow: "hidden", borderRadius: 12 }}>
-              <img src="../../assets/hero_cardio_1780130650972.png" alt="Cardio Zone" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              <img src="./assets/hero_cardio_1780130650972.png" alt="Cardio Zone" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(11,11,11,0.8), transparent 50%)" }} />
             </div>
             <div style={{
@@ -196,3 +196,4 @@ function Hero() {
 
 window.Hero = Hero;
 window.HatchedImage = HatchedImage;
+

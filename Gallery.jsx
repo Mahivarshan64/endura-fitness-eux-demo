@@ -3,14 +3,14 @@
 // Transformation Gallery Page
 
 const TRANSFORMATIONS = [
-  { name: "Arun K.", duration: "6 Months", quote: "Lost 18kg and found my confidence.", label: "Weight Loss", img: "../../assets/before_after_1_1780129699663.png", height: 450 },
-  { name: "Meera S.", duration: "1 Year", quote: "From struggling with 5kg to deadlifting 60kg.", label: "Strength", img: "../../assets/before_after_2_1780129717079.png", height: 350 },
-  { name: "Rahul V.", duration: "8 Months", quote: "The CrossFit community changed my life.", label: "Conditioning", img: "../../assets/before_after_3_1780129731569.png", height: 500 },
-  { name: "Pooja N.", duration: "4 Months", quote: "Diet and consistency. Dropped 12kg fast.", label: "Weight Loss", img: "../../assets/before_after_4_1780129746081.png", height: 400 },
-  { name: "Suresh P.", duration: "1.5 Years", quote: "Gained 10kg of pure muscle mass.", label: "Muscle Gain", img: "../../assets/before_after_5_1780129794204.png", height: 450 },
-  { name: "Deepa T.", duration: "9 Months", quote: "I feel 10 years younger and much stronger.", label: "Overall Fitness", img: "../../assets/before_after_6_1780129812079.png", height: 350 },
-  { name: "Kiran R.", duration: "5 Months", quote: "Completely redefined my physique.", label: "Body Recomp", img: "../../assets/before_after_7_1780129828942.png", height: 500 },
-  { name: "Vikas M.", duration: "11 Months", quote: "Never thought I could look this shredded.", label: "Shredding", img: "../../assets/before_after_8_1780129847029.png", height: 400 }
+  { name: "Arun K.", duration: "6 Months", quote: "Lost 18kg and found my confidence.", label: "Weight Loss", img: "./assets/before_after_1_1780129699663.png", height: 450 },
+  { name: "Meera S.", duration: "1 Year", quote: "From struggling with 5kg to deadlifting 60kg.", label: "Strength", img: "./assets/before_after_2_1780129717079.png", height: 350 },
+  { name: "Rahul V.", duration: "8 Months", quote: "The CrossFit community changed my life.", label: "Conditioning", img: "./assets/before_after_3_1780129731569.png", height: 500 },
+  { name: "Pooja N.", duration: "4 Months", quote: "Diet and consistency. Dropped 12kg fast.", label: "Weight Loss", img: "./assets/before_after_4_1780129746081.png", height: 400 },
+  { name: "Suresh P.", duration: "1.5 Years", quote: "Gained 10kg of pure muscle mass.", label: "Muscle Gain", img: "./assets/before_after_5_1780129794204.png", height: 450 },
+  { name: "Deepa T.", duration: "9 Months", quote: "I feel 10 years younger and much stronger.", label: "Overall Fitness", img: "./assets/before_after_6_1780129812079.png", height: 350 },
+  { name: "Kiran R.", duration: "5 Months", quote: "Completely redefined my physique.", label: "Body Recomp", img: "./assets/before_after_7_1780129828942.png", height: 500 },
+  { name: "Vikas M.", duration: "11 Months", quote: "Never thought I could look this shredded.", label: "Shredding", img: "./assets/before_after_8_1780129847029.png", height: 400 }
 ];
 
 function TransformationCard({ item }) {
@@ -117,3 +117,4 @@ function Gallery() {
 }
 
 window.Gallery = Gallery;
+
