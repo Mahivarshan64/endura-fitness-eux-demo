@@ -23,7 +23,7 @@ function Contact() {
           textWrap: "balance",
           marginBottom: 48
         }}>
-          Ready to join the elite?
+          Ready to start at Sport Life?
         </h2>
 
         <div style={{
@@ -70,23 +70,23 @@ function Contact() {
             <div>
               <h3 style={{ fontSize: 24, fontWeight: 700, marginBottom: 24, color: "var(--fg1)" }}>Contact Information</h3>
               <p style={{ color: "var(--fg2)", lineHeight: 1.6, marginBottom: 32 }}>
-                Have questions about our memberships, personal training, or facilities? Our team is here to help you get started on your fitness journey.
+                Questions about membership, personal training, or want to walk the floors first? Our front-desk team makes getting started effortless — drop by, call, or message us.
               </p>
-              
+
               <div style={{ display: "grid", gap: 24 }}>
-                <div style={{ display: "flex", gap: 16 }}>
+                <a href="https://www.google.com/maps/search/?api=1&query=Sport+Life+Fitness+Club+Sophria+Plaza+Hyderabad" target="_blank" rel="noopener noreferrer" style={{ display: "flex", gap: 16, textDecoration: "none" }}>
                   <div style={{ width: 48, height: 48, borderRadius: 12, background: "var(--surface-2)", border: "1px solid var(--border)", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--accent)", flexShrink: 0 }}>
                     <Icon_MapPin size={24} />
                   </div>
                   <div>
                     <div style={{ fontWeight: 600, color: "var(--fg1)", marginBottom: 4 }}>Location</div>
                     <div style={{ color: "var(--fg2)", lineHeight: 1.5 }}>
-                      1st floor, 18/1, Alexandria St,<br />
-                      above royal mart supermarket, near Richmond Park,<br />
-                      Richmond Town, Bengaluru, Karnataka 560025
+                      1st Floor, Pillar No 86, Sophria Plaza,<br />
+                      beside Sophria Private Limited, 13-6-431/D/88,<br />
+                      Hyderabad, Telangana 500006
                     </div>
                   </div>
-                </div>
+                </a>
 
                 <div style={{ display: "flex", gap: 16 }}>
                   <div style={{ width: 48, height: 48, borderRadius: 12, background: "var(--surface-2)", border: "1px solid var(--border)", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--accent)", flexShrink: 0 }}>
@@ -94,17 +94,27 @@ function Contact() {
                   </div>
                   <div>
                     <div style={{ fontWeight: 600, color: "var(--fg1)", marginBottom: 4 }}>Phone</div>
-                    <div style={{ color: "var(--fg2)", fontFamily: "var(--font-mono)" }}>097395 40008</div>
+                    <a href="tel:+916303889740" style={{ color: "var(--fg2)", fontFamily: "var(--font-mono)", textDecoration: "none" }}>063038 89740</a>
                   </div>
                 </div>
-                
+
+                <div style={{ display: "flex", gap: 16 }}>
+                  <div style={{ width: 48, height: 48, borderRadius: 12, background: "var(--surface-2)", border: "1px solid var(--border)", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--accent)", flexShrink: 0 }}>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  </div>
+                  <div>
+                    <div style={{ fontWeight: 600, color: "var(--fg1)", marginBottom: 4 }}>Hours</div>
+                    <div style={{ color: "var(--fg2)" }}>Open daily · 5:00 AM – 11:30 PM</div>
+                  </div>
+                </div>
+
                 <div style={{ display: "flex", gap: 16 }}>
                   <div style={{ width: 48, height: 48, borderRadius: 12, background: "var(--surface-2)", border: "1px solid var(--border)", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--accent)", flexShrink: 0 }}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                   </div>
                   <div>
                     <div style={{ fontWeight: 600, color: "var(--fg1)", marginBottom: 4 }}>Email</div>
-                    <div style={{ color: "var(--fg2)" }}>hello@mrmrsmuscle.com</div>
+                    <a href="mailto:hello@sportlifefitness.in" style={{ color: "var(--fg2)", textDecoration: "none" }}>hello@sportlifefitness.in</a>
                   </div>
                 </div>
               </div>
@@ -124,14 +134,14 @@ function Contact() {
 
           <div style={{ display: "grid", gap: 16 }}>
             {[
-              { q: "What is the cancellation policy?", a: "We require a 30-day notice for all membership cancellations. You can cancel at the front desk or via email." },
-              { q: "Do you offer trial classes?", a: "Yes! We offer a one-day free pass for local residents to experience our facilities and a trial class of your choice." },
-              { q: "What's included in membership?", a: "Basic access includes full gym floor, lockers, and showers. Premium and Elite tiers include additional coaching and classes." },
-              { q: "Are there group discounts?", a: "We offer corporate rates and family packages. Bring 3 or more people to unlock up to 15% off standard rates." },
-              { q: "Do you offer online coaching?", a: "Yes, our Elite trainers provide custom online programming and diet plans for members who travel frequently." },
-              { q: "What if I miss classes?", a: "Classes can be rescheduled via our app up to 2 hours before the start time without penalty." },
-              { q: "Locker policy?", a: "Day lockers are free to use. Overnight premium lockers are available for rent at ₹500/month." },
-              { q: "Guest policy?", a: "Members can bring one guest per month for free. Additional guest passes are ₹500/day." },
+              { q: "Can I tour the gym before joining?", a: "Absolutely. Walk in any day until 11:30 PM, or book a tour and our front-desk team will show you every floor — no pressure, no obligation." },
+              { q: "Is Sport Life unisex and beginner friendly?", a: "Yes. We're a safe, unisex club that's proudly LGBTQ+ and partner-friendly. Our trainers and front desk make sure first-timers feel comfortable from day one." },
+              { q: "How do you maintain hygiene?", a: "Equipment is sanitised through the day, floors are cleaned regularly, and every level is well-ventilated. Clean, fresh facilities are what members rate us highest for." },
+              { q: "What's included in membership?", a: "Membership covers full access to all floors, lockers, and showers. Higher tiers add personal coaching, custom plans, and priority on classes." },
+              { q: "Do you offer personal training?", a: "Yes. Our certified, motivating coaches provide one-on-one programmes with form correction, progress tracking, and accountability tailored to your goal." },
+              { q: "What are your timings?", a: "We're open daily from early morning until 11:30 PM, so you can train before work, late at night, or any time in between." },
+              { q: "Is there parking and easy access?", a: "We're on the 1st floor of Sophria Plaza (Pillar No 86), Hyderabad — easy to reach, with the entrance beside Sophria Private Limited." },
+              { q: "Can couples or partners train together?", a: "Of course. Many members train as partners or couples — the unisex layout and multiple floors give everyone space and a welcoming vibe." },
             ].map((faq, i) => (
               <FaqItem key={i} faq={faq} />
             ))}

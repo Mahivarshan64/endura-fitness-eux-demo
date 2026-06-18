@@ -23,7 +23,7 @@ function About() {
           textWrap: "balance",
           marginBottom: 48
         }}>
-          Built for those who demand more.
+          Built for everyone who walks in.
         </h2>
 
         {/* ── Stats banner ── */}
@@ -38,9 +38,9 @@ function About() {
           overflow: "hidden",
         }} className="mmm-about-stats">
           {[
-            { v: "10+",    l: "Years in Richmond Town",    sub: "Established 2013" },
-            { v: "2,000+", l: "Lives Transformed",         sub: "And counting" },
-            { v: "4.9 ★",  l: "Google Rating",             sub: "222 verified reviews" },
+            { v: "4.9 ★",   l: "Google Rating",      sub: "From 1,000+ reviews" },
+            { v: "1,000+",  l: "Five-Star Reviews",  sub: "And counting" },
+            { v: "11:30 PM", l: "Open Daily Until",  sub: "Early mornings too" },
           ].map((s, i, arr) => (
             <div key={s.l} style={{
               padding: "36px 32px",
@@ -74,20 +74,20 @@ function About() {
             <p data-reveal="" style={{
               fontSize: 20, color: "var(--fg2)", lineHeight: 1.6, marginBottom: 24,
             }}>
-              At Raw Fitness, we believe fitness is not a hobby—it's a lifestyle. Established over a decade ago, our mission has always been to provide a premier environment for individuals who want to train hard, stay focused, and achieve their maximum potential.
+              At Sport Life Fitness Club, we believe a premium gym should feel welcoming, not intimidating. We built a spacious, multi-floor club in the heart of Hyderabad for everyone who wants to train hard in a clean, professional space.
             </p>
             <p data-reveal="" data-reveal-delay="120" style={{
               fontSize: 18, color: "var(--fg2)", lineHeight: 1.6, marginBottom: 32,
             }}>
-              We combine state-of-the-art equipment, world-class personal trainers, and a dedicated community of like-minded members to help you reach your goals faster than ever before.
+              We combine premium strength and cardio equipment, certified and genuinely motivating trainers, and a friendly front-desk team — so every visit is easy, from your first tour to your thousandth session.
             </p>
-            
+
             <div data-reveal="" data-reveal-delay="220" style={{ display: "grid", gap: 16 }}>
               {[
-                "Certified professional trainers",
-                "State-of-the-art strength and cardio equipment",
-                "Inclusive and highly motivated community",
-                "Proven results over 15+ years"
+                "Certified, motivating professional trainers",
+                "Premium strength & cardio equipment",
+                "Spacious, multi-floor & impeccably clean",
+                "Safe unisex space — LGBTQ+ & partner friendly"
               ].map((item) => (
                 <div key={item} style={{ display: "flex", alignItems: "center", gap: 12 }}>
                   <span style={{
@@ -134,24 +134,24 @@ function About() {
             {[
               {
                 num: "01",
-                title: "Train with Purpose",
-                body: "Every session at Raw Fitness is intentional. No random workouts — our coaches build periodised programmes around your specific goal, whether that's fat loss, strength, or endurance.",
+                title: "Elite Coaching",
+                body: "Every member gets real attention. Our certified, motivating coaches correct your form, tune your plan, and keep you accountable — never a random workout, never left on your own.",
                 icon: (
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6.5 6.5h11M6.5 17.5h11M12 3v18"/></svg>
                 ),
               },
               {
                 num: "02",
-                title: "Fuel the Machine",
-                body: "Fitness is 40% training and 60% nutrition. Our in-house nutritionists create macro-calculated, flexible meal plans that work with your lifestyle — not against it.",
+                title: "Spotless & Spacious",
+                body: "Cleanliness is a discipline here. Equipment is sanitised through the day and our multiple floors stay bright and well-ventilated, so you always train in a fresh, uncrowded space.",
                 icon: (
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/></svg>
                 ),
               },
               {
                 num: "03",
-                title: "Show Up Consistently",
-                body: "The secret is not the programme — it's the habit. We build accountability systems, check-in routines, and a community culture that makes skipping feel harder than showing up.",
+                title: "Everyone's Welcome",
+                body: "From a warm front desk to a safe, unisex floor that's proudly LGBTQ+ and partner-friendly, Sport Life is built so anyone can walk in and feel at home from the very first visit.",
                 icon: (
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 ),
@@ -199,26 +199,26 @@ function About() {
             <div style={{
               fontSize: 11, fontWeight: 700, letterSpacing: "0.18em",
               textTransform: "uppercase", color: "var(--fg-on-accent)", opacity: 0.6, marginBottom: 16,
-            }}>· Richmond Town's Favourite Gym Since 2013</div>
+            }}>· Hyderabad's Highest-Rated Fitness Club</div>
             <blockquote style={{
               fontFamily: "var(--font-display)", fontWeight: 900,
               fontSize: "clamp(22px, 3vw, 36px)", lineHeight: 1.1,
               letterSpacing: "-0.01em", textTransform: "uppercase",
               color: "var(--fg-on-accent)", margin: 0,
             }}>
-              "We don't just train bodies. We reshape the way people see themselves."
+              "We don't just build bodies. We built a clean, welcoming home where every member belongs."
             </blockquote>
             <div style={{ marginTop: 20, fontSize: 13, fontWeight: 600, color: "var(--fg-on-accent)", opacity: 0.7 }}>
-              — Raw Fitness, Founder's Note
+              — Sport Life Fitness Club
             </div>
           </div>
           <div style={{
             display: "grid", gap: 16, minWidth: 180,
           }} className="mmm-hide-mobile">
             {[
-              { v: "2013",  l: "Founded" },
-              { v: "1st",   l: "Floor, Alexandria St" },
-              { v: "24 / 7", l: "Coach Support" },
+              { v: "4.9★",     l: "Google Rating" },
+              { v: "1,000+",   l: "Member Reviews" },
+              { v: "11:30 PM", l: "Open Daily Until" },
             ].map((s) => (
               <div key={s.l} style={{
                 padding: "14px 20px",

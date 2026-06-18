@@ -54,7 +54,7 @@ function PricingCard({ tier }) {
       border: `1px solid ${isElite ? "var(--accent)" : "var(--border)"}`,
       borderRadius: 16,
       display: "flex", flexDirection: "column", gap: 24,
-      boxShadow: isElite ? "0 24px 48px -20px rgba(204, 255, 0, 0.15)" : "none",
+      boxShadow: isElite ? "0 24px 48px -20px rgba(255, 46, 46, 0.2)" : "none",
       transform: isElite ? "scale(1.05)" : "scale(1)",
       zIndex: isElite ? 10 : 1,
     }}>
@@ -130,8 +130,11 @@ function Pricing() {
             lineHeight: 0.95, letterSpacing: "-0.02em", textTransform: "uppercase",
             textWrap: "balance",
           }}>
-            Choose your tier.
+            Memberships for everyone.
           </h2>
+          <p style={{ marginTop: 20, fontSize: 17, color: "var(--fg2)", lineHeight: 1.6 }}>
+            Full access to every floor, clean facilities, and a welcoming team — no joining pressure, cancel anytime. Not sure yet? Book a free tour first.
+          </p>
         </div>
 
         <div style={{

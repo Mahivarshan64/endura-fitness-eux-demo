@@ -4,20 +4,20 @@
 function Faq() {
   const faqs = [
     {
-      q: "Do I need prior experience to join?",
-      a: "Not at all. Our trainers will assess your current fitness level and build a tailored program that safely progresses as you build strength and endurance."
+      q: "Do I need experience to start?",
+      a: "Not at all. Sport Life is welcoming and beginner-friendly — our coaches assess where you are and build a safe plan that grows with you, with hands-on guidance every step."
     },
     {
-      q: "Are the nutrition plans flexible?",
-      a: "Yes. We believe the best diet is one you can stick to. We adjust your macros and meal options weekly based on your feedback and progress."
+      q: "How clean is the gym?",
+      a: "Spotless. Equipment is sanitised through the day and every floor is well-ventilated and regularly cleaned. It's the thing our members rate us highest for."
     },
     {
-      q: "Can I switch between class types?",
-      a: "Absolutely! Our memberships allow you to mix personalized training with CrossFit and Cardio sessions, keeping your routine fresh and effective."
+      q: "Is it a unisex, inclusive space?",
+      a: "Yes — a safe, unisex club that's proudly LGBTQ+ and partner-friendly. Everyone trains comfortably across our multiple, spacious floors."
     },
     {
-      q: "Is there support outside of gym hours?",
-      a: "Every member gets app access with 24/7 direct messaging to their dedicated coach for questions, form checks, or motivation."
+      q: "What are your hours?",
+      a: "We're open daily from early morning until 11:30 PM, so you can train whenever it suits you — before work, late evening, or anytime in between."
     }
   ];
 

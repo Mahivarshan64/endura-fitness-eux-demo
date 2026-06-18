@@ -40,7 +40,7 @@ function Schedule() {
           fontSize: 13, fontWeight: 600, letterSpacing: "0.18em",
           textTransform: "uppercase", color: "var(--accent)", marginBottom: 12,
         }}>
-          · Class Schedule
+          · Coaching &amp; Classes
         </div>
         <h2 style={{
           fontFamily: "var(--font-display)",
@@ -50,7 +50,7 @@ function Schedule() {
           textWrap: "balance",
           marginBottom: 48
         }}>
-          Plan your success.
+          Expert coaches, every day.
         </h2>
 
         <div style={{

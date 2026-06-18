@@ -3,8 +3,8 @@
 // Reusable button primitives.
 //
 // Variants:
-//   primary   — solid lime, dark text. The hero "Get Started Now" CTA.
-//   secondary — outline, lime border on hover.
+//   primary   — solid red, white text. The hero "Become a Member" CTA.
+//   secondary — outline, red border on hover.
 //   ghost     — text-only, low contrast.
 //
 // Sizes: sm | md | lg

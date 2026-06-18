@@ -84,9 +84,9 @@ function Hero() {
               textTransform: "uppercase",
               textWrap: "balance",
             }}>
-              Transform your lifestyle.
+              Elevate your
               <br />
-              <span style={{ color: "var(--accent)" }}>Unleash</span> your inner beast.
+              <span style={{ color: "var(--accent)" }}>fitness journey.</span>
             </h1>
 
             <p style={{
@@ -96,15 +96,15 @@ function Hero() {
               lineHeight: 1.5,
               maxWidth: 560,
             }}>
-              Bengaluru's premier unisex fitness hub for strength, community, and life‑changing results.
+              Sport Life Fitness Club — Hyderabad's premium, multi-floor unisex club. Spotless, fully equipped, and welcoming to every body, with coaches who make the difference.
             </p>
 
             <div style={{ display: "flex", gap: 12, marginTop: 36, flexWrap: "wrap" }}>
               <Button variant="primary" size="lg" iconRight={<Icon_ArrowRight size={18} />} onClick={() => window.navigateTo('Pricing')}>
-                Get Started Now
+                Become a Member
               </Button>
-              <Button variant="secondary" size="lg" iconLeft={<Icon_Play size={16} />} onClick={() => window.navigateTo('Gallery')}>
-                Explore Virtual Tour
+              <Button variant="secondary" size="lg" iconLeft={<Icon_Play size={16} />} onClick={() => window.navigateTo('Contact')}>
+                Book a Facility Tour
               </Button>
             </div>
           </div>
@@ -134,16 +134,16 @@ function Hero() {
               display: "flex", flexDirection: "column", justifyContent: "space-between",
             }}>
               <div style={{ display: "flex", alignItems: "center", gap: 6, fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 600 }}>
-                <Icon_Sparkles size={14} />
-                Member Pulse
+                <Icon_Star size={14} fill="currentColor" />
+                Member Rated
               </div>
               <div>
                 <div style={{
                   fontFamily: "var(--font-display)",
                   fontWeight: 900, fontSize: "clamp(36px, 4vw, 56px)", lineHeight: 0.9, letterSpacing: "-0.02em",
-                }}>97%</div>
+                }}>4.9★</div>
                 <div style={{ fontSize: 12, fontWeight: 600, marginTop: 4 }}>
-                  hit their goal in 12 weeks
+                  from 1,000+ verified reviews
                 </div>
               </div>
             </div>
@@ -172,9 +172,9 @@ function Hero() {
           gap: 24,
         }}>
           {[
-            { v: "222",    l: "Google Reviews" },
-            { v: "24/7",   l: "Coach Support" },
-            { v: "15+",    l: "Years Strong" },
+            { v: "4.9★",       l: "Google Rating" },
+            { v: "1,000+",     l: "Five-Star Reviews" },
+            { v: "Multi-Floor", l: "Unisex Club" },
           ].map((s) => (
             <div key={s.l} style={{ display: "flex", alignItems: "baseline", gap: 12 }}>
               <div style={{

@@ -1,5 +1,5 @@
 /* =============================================================
-   Mr & Mrs. Muscle's Gym — Design Tokens
+   Sport Life Fitness Club — Design Tokens
    Colors, Typography, Spacing, Radii, Shadows, Motion
    ============================================================= */
 
@@ -18,25 +18,25 @@
   --border-hot:       #3A3A3A;
 
   /* -------- Color: Text -------- */
-  --fg1:              #FAFAFA;   /* primary text */
+  --fg1:              #FAFAFA;   /* primary text — crisp white */
   --fg2:              #A1A1A1;   /* secondary */
   --fg3:              #6B6B6B;   /* muted, metadata */
-  --fg-on-accent:     #0B0B0B;   /* text on lime */
+  --fg-on-accent:     #FFFFFF;   /* crisp white text on red */
 
   /* -------- Color: Brand Accents -------- */
-  --accent:           #CCFF00;   /* electric lime — primary */
-  --accent-bright:    #D6FF33;   /* hover */
-  --accent-dim:       #99CC00;   /* pressed */
-  --accent-glow:      rgba(204, 255, 0, 0.35);
+  --accent:           #FF2E2E;   /* vibrant athletic red — primary */
+  --accent-bright:    #FF5247;   /* hover */
+  --accent-dim:       #D41C1C;   /* pressed */
+  --accent-glow:      rgba(255, 46, 46, 0.35);
 
-  --accent-2:         #FF6B1A;   /* high-energy amber, secondary */
-  --accent-2-bright:  #FF8A47;
-  --accent-2-dim:     #CC4F00;
+  --accent-2:         #FF7A1A;   /* high-energy orange, secondary */
+  --accent-2-bright:  #FF9A47;
+  --accent-2-dim:     #CC5A00;
 
   /* -------- Color: Semantic -------- */
   --success:          #4ADE80;
   --danger:           #FF4D4D;
-  --warning:          #FF6B1A;   /* aliases amber */
+  --warning:          #FF7A1A;   /* aliases orange */
   --info:             #60A5FA;
 
   /* -------- Typography: Families -------- */

@@ -1,6 +1,6 @@
-# Landing UI Kit
+# Sport Life Fitness Club — Landing UI Kit
 
-A pixel-honest recreation of the marketing landing page for **Mr & Mrs. Muscle's Gym**, the single product described in the brief.
+The marketing landing page for **Sport Life Fitness Club**, a premium, multi-floor unisex fitness center in Hyderabad (Sophria Plaza). Rated 4.9/5 from 1,000+ reviews for cleanliness, professional coaching, and a welcoming community.
 
 ## Files
 
@@ -17,6 +17,6 @@ A pixel-honest recreation of the marketing landing page for **Mr & Mrs. Muscle's
 
 - **Tokens come from `colors_and_type.css`** (one level up). Don't hard-code colors or font stacks.
 - **Imagery** is rendered with `HatchedImage` placeholder boxes — see `Hero.jsx`. Swap with real photography when supplied.
-- **Logo** is the lime dumbbell in `Navbar.jsx`. The standalone marks live at `/assets/logo-mark.svg` and `/assets/logo-wordmark.svg`.
+- **Logo** is the red dumbbell in `Navbar.jsx`. The standalone marks live at `/assets/logo-mark.svg` and `/assets/logo-wordmark.svg`.
 - **Icons** are Lucide-style 2px strokes. Add new ones inside `Icons.jsx` and expose them on `window.Icon_*`.
 - **Responsiveness:** components use the `.mmm-hide-mobile`, `.mmm-hero-grid`, etc. helper classes from `index.html` for breakpoints under 880px.

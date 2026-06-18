@@ -3,9 +3,9 @@
 // Location & Hours split section + footer.
 
 const HOURS = [
-  { day: "Monday — Friday", time: "05:30 — 00:00" },
-  { day: "Saturday",        time: "06:00 — 00:00" },
-  { day: "Sunday",          time: "06:00 — 00:00" },
+  { day: "Monday — Friday", time: "05:00 — 23:30" },
+  { day: "Saturday",        time: "06:00 — 23:30" },
+  { day: "Sunday",          time: "06:00 — 23:30" },
 ];
 
 const PEAK = [
@@ -35,7 +35,7 @@ function HoursColumn() {
         fontWeight: 900, fontSize: 32, lineHeight: 1, letterSpacing: "-0.01em",
         textTransform: "uppercase",
       }}>
-        Closes Daily at <span style={{ color: "var(--accent)" }}>12:00 AM</span>
+        Open Daily until <span style={{ color: "var(--accent)" }}>11:30 PM</span>
       </h3>
 
       <div style={{ marginTop: 28, display: "grid", gap: 10 }}>
@@ -104,7 +104,7 @@ function ContactColumn() {
           letterSpacing: "-0.02em", textTransform: "uppercase",
           color: "var(--fg-on-accent)",
         }}>
-          Train where Richmond Town gets stronger.
+          Train where Hyderabad gets stronger.
         </h3>
       </div>
 
@@ -119,9 +119,9 @@ function ContactColumn() {
             <Icon_MapPin size={18} />
           </div>
           <div style={{ fontSize: 14, lineHeight: 1.55, fontWeight: 500 }}>
-            1st floor, 18/1, Alexandria St,<br />
-            above royal mart supermarket, near Richmond Park,<br />
-            Richmond Town, Bengaluru, Karnataka 560025
+            1st Floor, Pillar No 86, Sophria Plaza,<br />
+            beside Sophria Private Limited, 13-6-431/D/88,<br />
+            Hyderabad, Telangana 500006
           </div>
         </div>
 
@@ -134,9 +134,9 @@ function ContactColumn() {
           }}>
             <Icon_Phone size={18} />
           </div>
-          <div style={{ fontFamily: "var(--font-mono)", fontSize: 15, fontWeight: 500, lineHeight: 1.7 }}>
-            097395 40008
-          </div>
+          <a href="tel:+916303889740" style={{ fontFamily: "var(--font-mono)", fontSize: 15, fontWeight: 500, lineHeight: 1.7, color: "var(--fg-on-accent)", textDecoration: "none" }}>
+            063038 89740
+          </a>
         </div>
       </div>
 
@@ -210,6 +210,68 @@ function Footer() {
   return (
     <footer id="footer" style={{ padding: "64px 24px 32px", background: "var(--canvas)" }}>
       <div style={{ maxWidth: "var(--max-w)", margin: "0 auto" }}>
+        {/* Location & access quick-info — visible on every page */}
+        <div style={{
+          display: "flex", flexWrap: "wrap", gap: 16,
+          paddingBottom: 40, marginBottom: 48,
+          borderBottom: "1px solid var(--border-subtle)",
+        }}>
+          {[
+            {
+              icon: <Icon_MapPin size={18} />,
+              label: "Visit",
+              value: "1st Floor, Sophria Plaza, 13-6-431/D/88, Hyderabad, Telangana 500006",
+              href: "https://www.google.com/maps/search/?api=1&query=Sport+Life+Fitness+Club+Sophria+Plaza+Hyderabad",
+              external: true,
+            },
+            {
+              icon: <Icon_Clock size={18} />,
+              label: "Hours",
+              value: "Open daily · 5:00 AM – 11:30 PM",
+            },
+            {
+              icon: <Icon_Phone size={18} />,
+              label: "Call",
+              value: "063038 89740",
+              href: "tel:+916303889740",
+            },
+          ].map((info) => {
+            const inner = (
+              <React.Fragment>
+                <span style={{
+                  width: 40, height: 40, flexShrink: 0,
+                  display: "inline-flex", alignItems: "center", justifyContent: "center",
+                  background: "var(--surface-2)", border: "1px solid var(--border)",
+                  borderRadius: 10, color: "var(--accent)",
+                }}>{info.icon}</span>
+                <span>
+                  <span style={{
+                    display: "block", fontSize: 11, fontWeight: 700, letterSpacing: "0.16em",
+                    textTransform: "uppercase", color: "var(--fg3)", marginBottom: 4,
+                  }}>{info.label}</span>
+                  <span style={{ fontSize: 14, color: "var(--fg1)", fontWeight: 500, lineHeight: 1.45 }}>
+                    {info.value}
+                  </span>
+                </span>
+              </React.Fragment>
+            );
+            const wrapStyle = {
+              flex: "1 1 260px", minWidth: 0,
+              display: "flex", alignItems: "flex-start", gap: 14,
+              textDecoration: "none",
+            };
+            return info.href ? (
+              <a key={info.label} href={info.href}
+                 {...(info.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                 style={wrapStyle}>
+                {inner}
+              </a>
+            ) : (
+              <div key={info.label} style={wrapStyle}>{inner}</div>
+            );
+          })}
+        </div>
+
         <div style={{
           display: "grid",
           gridTemplateColumns: "minmax(0, 2fr) repeat(3, minmax(0, 1fr))",
@@ -230,10 +292,10 @@ function Footer() {
               <span style={{
                 fontFamily: "var(--font-display)", fontWeight: 900,
                 fontSize: 20, textTransform: "uppercase", letterSpacing: "0.01em",
-              }}>Raw Fitness</span>
+              }}>Sport Life</span>
             </a>
             <p style={{ marginTop: 16, color: "var(--fg2)", fontSize: 14, lineHeight: 1.6, maxWidth: 360 }}>
-              Bengaluru's premier unisex fitness hub for strength, community, and life‑changing results.
+              Hyderabad's premium, multi-floor unisex fitness club — spotless, fully equipped, and welcoming to every body.
             </p>
             <div style={{ display: "flex", gap: 8, marginTop: 24 }}>
               <button style={socialBtn} aria-label="Instagram"><Icon_Instagram size={18} /></button>
@@ -242,9 +304,9 @@ function Footer() {
             </div>
           </div>
 
-          <FooterColumn title="Train" links={["Personalized Training", "Diet Plans", "Cardio Zone", "CrossFit"]} />
-          <FooterColumn title="Visit"  links={["Location", "Contact", "Virtual Tour"]} />
-          <FooterColumn title="Members" links={["Join the Elite", "Member Login", "Refer a Friend", "FAQ"]} />
+          <FooterColumn title="Train" links={["Personal Training", "Group Classes", "Cardio Floor", "Strength Zone"]} />
+          <FooterColumn title="Visit"  links={["Location", "Contact", "Facility Tour"]} />
+          <FooterColumn title="Members" links={["Join Sport Life", "Pricing", "Refer a Friend", "FAQ"]} />
         </div>
 
         <div style={{
@@ -253,7 +315,7 @@ function Footer() {
           gap: 16, flexWrap: "wrap",
         }}>
           <div style={{ color: "var(--fg3)", fontSize: 13 }}>
-            © 2026 Raw Fitness. All rights reserved.
+            © 2026 Sport Life Fitness Club. All rights reserved.
           </div>
           <div style={{ display: "flex", gap: 24 }}>
             <a href="#" style={{ ...linkStyle, color: "var(--fg3)", fontSize: 13 }}>Privacy</a>

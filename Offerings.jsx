@@ -1,43 +1,51 @@
 /* eslint-disable */
-/* global React, Icon_Dumbbell, Icon_Apple, Icon_Heart, Icon_Users, Icon_ArrowRight */
-// Core Offerings — 4-card interactive grid.
-// Hover: card raises 2px, border lights to accent, icon background flips to lime.
+/* global React, Icon_Dumbbell, Icon_Layers, Icon_Sparkles, Icon_Heart, Icon_ArrowRight */
+// The Sport Life Standard — facility highlights built on the brand pillars.
+// 4-card interactive grid. Hover: card raises, border lights to red, icon fills red.
 
 const OFFERINGS = [
   {
     icon: "dumbbell",
-    title: "Personalized Training",
-    blurb: "Dedicated 1-on-1 coaching focusing on strict form, technique, and accountability.",
-    benefits: ["Customized workout plans", "Form correction & injury prevention", "Accountability & motivation"],
-    included: "Weekly check-ins, app access, 1-on-1 sessions",
-    price: "₹8,000",
-    tag: "01 · Strength",
+    title: "Elite Coaching & Support",
+    blurb: "Certified, motivating trainers who give you real one-on-one attention — correcting form, tracking progress, and keeping you accountable every session.",
+    benefits: ["Personalised programmes for your goal", "Hands-on form correction & safety", "Constant motivation, zero judgement"],
+    included: "Goal assessment, structured plans, and a coach who knows your name.",
+    proof: "Personal attention",
+    cta: "Meet the coaches",
+    page: "About",
+    tag: "01 · Coaching",
   },
   {
-    icon: "apple",
-    title: "Tailored Diet Plans",
-    blurb: "Custom structured nutrition blueprints to fuel recovery and accelerate muscle growth.",
-    benefits: ["Macro-calculated meal plans", "Supplementation guidance", "Weekly adjustments"],
-    included: "Recipe guide, direct chat with nutritionist, body composition tracking",
-    price: "₹3,000",
-    tag: "02 · Nutrition",
+    icon: "layers",
+    title: "Spacious Multi-Floor Club",
+    blurb: "A massive, well-organised space across multiple floors — premium strength racks, full cardio arrays, and room to train without waiting in line.",
+    benefits: ["Multiple dedicated training floors", "Premium strength & cardio equipment", "Open layout, never overcrowded"],
+    included: "Free weights, machines, functional zones, and a high-energy cardio deck.",
+    proof: "Multi-floor",
+    cta: "See the space",
+    page: "Gallery",
+    tag: "02 · Facility",
+  },
+  {
+    icon: "sparkles",
+    title: "Impeccable Hygiene",
+    blurb: "Cleanliness is non-negotiable. Equipment is sanitised through the day and every floor is ventilated to keep the air — and the iron — fresh.",
+    benefits: ["Equipment sanitised through the day", "Bright, well-ventilated floors", "Spotless changing rooms & showers"],
+    included: "The spotless, fresh environment our members rate us highest for.",
+    proof: "Spotless daily",
+    cta: "Take a tour",
+    page: "Contact",
+    tag: "03 · Hygiene",
   },
   {
     icon: "heart",
-    title: "Cardio & Endurance",
-    blurb: "A high-tech cardio zone packed with state-of-the-art endurance machinery.",
-    benefits: ["Heart rate zone training", "HIIT & steady state protocols", "Increased stamina"],
-    included: "Treadmills, rowers, assault bikes, heart rate monitors",
-    price: "₹2,000",
-    tag: "03 · Conditioning",
-  },
-  {
-    icon: "users",
-    title: "CrossFit & Functional",
-    blurb: "High-intensity, community-driven functional training zones.",
-    benefits: ["Full body conditioning", "Community-led motivation", "Olympic weightlifting basics"],
-    included: "Group classes, specialized equipment, open gym access",
-    price: "₹4,500",
+    title: "Welcoming For Everyone",
+    blurb: "From the front desk to the floor, you belong here — a safe, unisex space that's proudly LGBTQ+ friendly and perfect for training partners.",
+    benefits: ["Friendly, hassle-free onboarding", "Safe unisex & partner-friendly", "Proudly LGBTQ+ inclusive"],
+    included: "A community that greets you by name from your very first visit.",
+    proof: "All welcome",
+    cta: "Get started",
+    page: "Contact",
     tag: "04 · Community",
   },
 ];
@@ -49,9 +57,9 @@ function OfferingIcon({ name, active }) {
   const props = { size: 28, stroke: color, strokeWidth: 2 };
   const map = {
     dumbbell: <Icon_Dumbbell size={props.size} stroke={props.stroke} strokeWidth={props.strokeWidth} />,
-    apple:    <Icon_Apple size={props.size} stroke={props.stroke} strokeWidth={props.strokeWidth} />,
+    layers:   <Icon_Layers size={props.size} stroke={props.stroke} strokeWidth={props.strokeWidth} />,
+    sparkles: <Icon_Sparkles size={props.size} stroke={props.stroke} strokeWidth={props.strokeWidth} />,
     heart:    <Icon_Heart size={props.size} stroke={props.stroke} strokeWidth={props.strokeWidth} />,
-    users:    <Icon_Users size={props.size} stroke={props.stroke} strokeWidth={props.strokeWidth} />,
   };
   return (
     <div style={{
@@ -80,7 +88,7 @@ function OfferingCard({ item }) {
         border: `1px solid ${hover ? "var(--accent)" : "var(--border)"}`,
         borderRadius: 16,
         transform: hover ? "translateY(-4px)" : "translateY(0)",
-        boxShadow: hover ? "0 24px 48px -20px rgba(204, 255, 0, 0.18)" : "none",
+        boxShadow: hover ? "0 24px 48px -20px rgba(255, 46, 46, 0.22)" : "none",
         transition: "all var(--dur-base) var(--ease-out)",
         display: "flex", flexDirection: "column", gap: 24,
         height: "100%",
@@ -130,10 +138,10 @@ function OfferingCard({ item }) {
 
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <div>
-          <div style={{ fontSize: 11, color: "var(--fg3)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 4 }}>Starting From</div>
-          <div style={{ fontFamily: "var(--font-display)", fontSize: 24, fontWeight: 900, color: "var(--fg1)", lineHeight: 1 }}>{item.price}</div>
+          <div style={{ fontSize: 11, color: "var(--fg3)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 4 }}>The Standard</div>
+          <div style={{ fontFamily: "var(--font-display)", fontSize: 22, fontWeight: 900, color: "var(--fg1)", lineHeight: 1, textTransform: "uppercase" }}>{item.proof}</div>
         </div>
-        
+
         <button style={{
           background: hover ? "var(--accent)" : "transparent",
           color: hover ? "var(--fg-on-accent)" : "var(--fg1)",
@@ -142,8 +150,8 @@ function OfferingCard({ item }) {
           fontSize: 13, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.05em",
           display: "inline-flex", alignItems: "center", gap: 8,
           cursor: "pointer", transition: "all var(--dur-base) var(--ease-out)"
-        }} onClick={() => window.navigateTo('Pricing')}>
-          Learn More
+        }} onClick={() => window.navigateTo(item.page)}>
+          {item.cta}
           <Icon_ArrowRight size={16} />
         </button>
       </div>
@@ -167,7 +175,7 @@ function Offerings() {
               fontSize: 13, fontWeight: 600, letterSpacing: "0.18em",
               textTransform: "uppercase", color: "var(--accent)", marginBottom: 12,
             }}>
-              · Core Offerings
+              · The Sport Life Standard
             </div>
             <h2 style={{
               fontFamily: "var(--font-display)",
@@ -176,11 +184,11 @@ function Offerings() {
               lineHeight: 0.95, letterSpacing: "-0.02em", textTransform: "uppercase",
               textWrap: "balance",
             }}>
-              Everything you need to build the body you want.
+              Why members rate us 4.9 stars.
             </h2>
           </div>
           <p style={{ maxWidth: 360, fontSize: 16, color: "var(--fg2)", lineHeight: 1.55 }}>
-            Four pillars, one programme. Mix and match — every member gets a coach who tunes the plan to your goals.
+            Elite coaching, a spotless multi-floor club, and a front desk that welcomes everyone — the four things 1,000+ members keep reviewing us for.
           </p>
         </div>
 

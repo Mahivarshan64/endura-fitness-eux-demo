@@ -4,38 +4,38 @@
 
 const TESTIMONIALS = [
   {
-    body: "This gym has completely changed my lifestyle. The trainers are very supportive, knowledgeable, and always motivate us to push beyond our limits. Highly recommended for anyone serious about fitness!",
-    author: "Sri Ram",
-    role: "Member · 2 years",
-    rating: 5,
-  },
-  {
-    body: "Excellent atmosphere, high-quality equipment, and professional trainers. Perfect ambiance for workouts, cardio, and CrossFit. Best place for workout freaks to train with like-minded people.",
-    author: "Verified Member",
-    role: "Google Review",
-    rating: 5,
-  },
-  {
-    body: "The coaching here is genuinely different — strict on form, generous with their time. I've added 22kg to my deadlift in eight weeks and I'm not stopping.",
-    author: "Anitha P.",
-    role: "Member · 6 months",
-    rating: 5,
-  },
-  {
-    body: "I've been to many gyms in Trichy, but the community here is unmatched. It feels like a family where everyone is pushing you to be your absolute best version.",
-    author: "Karthik R.",
+    body: "Easily the cleanest gym I've trained in. Equipment is wiped down through the day and every floor is well ventilated — you can tell hygiene is taken seriously here.",
+    author: "Sai Teja",
     role: "Member · 1 year",
     rating: 5,
   },
   {
-    body: "The personalized diet plans and training sessions were exactly what I needed. I lost 15kg in 4 months and my energy levels have never been this high. Phenomenal!",
-    author: "Sneha M.",
+    body: "The trainers are professional and genuinely motivating. They fix your form, track your progress, and never make you feel out of place. Best coaching I've had in Hyderabad.",
+    author: "Divya R.",
     role: "Member · 8 months",
     rating: 5,
   },
   {
-    body: "World-class facilities and hygiene is top-notch. They sanitize equipment regularly and the trainers ensure you are always safe while lifting heavy. Highly recommended.",
-    author: "Vikram S.",
+    body: "As a couple we wanted a safe, unisex space — Sport Life is exactly that. It's spread over multiple floors so it never feels crowded. Great vibe for everyone.",
+    author: "Arjun & Meghana",
+    role: "Members · 6 months",
+    rating: 5,
+  },
+  {
+    body: "Walked in for a tour and the front desk made onboarding effortless. Friendly from the first minute, no pushy sales talk. I joined the same day.",
+    author: "Rahul V.",
+    role: "Google Review",
+    rating: 5,
+  },
+  {
+    body: "A huge multi-floor setup with premium equipment for everything — strength, cardio, functional. I never have to wait for a machine, even at peak hours.",
+    author: "Praveen K.",
+    role: "Member · 2 years",
+    rating: 5,
+  },
+  {
+    body: "A welcoming, inclusive community that genuinely feels like family. Clean, professional and high-energy. Comfortable for everyone — highly recommended.",
+    author: "Sneha M.",
     role: "Google Review",
     rating: 5,
   },
@@ -134,11 +134,31 @@ function Testimonials() {
               fontFamily: "var(--font-display)",
               fontWeight: 900, fontSize: "clamp(32px, 4vw, 56px)", lineHeight: 0.95,
               letterSpacing: "-0.02em", textTransform: "uppercase",
-              marginBottom: 24,
+              marginBottom: 20,
             }}>
               {/* eslint-disable-next-line react/jsx-no-literals */}
-              Real members. Real transformations.
+              Loved across Hyderabad.
             </h2>
+
+            {/* Prominent rating badge */}
+            <div style={{
+              display: "inline-flex", alignItems: "center", gap: 14, flexWrap: "wrap",
+              padding: "12px 18px",
+              background: "var(--surface-1)",
+              border: "1px solid var(--border)",
+              borderRadius: "var(--radius-pill)",
+            }}>
+              <span style={{
+                fontFamily: "var(--font-display)", fontWeight: 900, fontSize: 28,
+                color: "var(--accent)", lineHeight: 1,
+              }}>4.9</span>
+              <Stars count={5} />
+              <span style={{
+                fontSize: 13, fontWeight: 600, color: "var(--fg2)", letterSpacing: "0.02em",
+              }}>
+                from <span style={{ color: "var(--fg1)" }}>1,000+</span> Google reviews
+              </span>
+            </div>
           </div>
 
           <div style={{ display: "flex", gap: 8 }}>

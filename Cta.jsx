@@ -14,7 +14,7 @@ function Cta() {
         position: "absolute", top: "50%", left: "50%",
         transform: "translate(-50%, -50%)",
         width: "120%", height: "120%",
-        background: "radial-gradient(circle at center, rgba(204, 255, 0, 0.08) 0%, transparent 60%)",
+        background: "radial-gradient(circle at center, rgba(255, 46, 46, 0.1) 0%, transparent 60%)",
         pointerEvents: "none",
         zIndex: 0,
       }} />
@@ -28,7 +28,7 @@ function Cta() {
           fontSize: 13, fontWeight: 600, letterSpacing: "0.18em",
           textTransform: "uppercase", color: "var(--accent)", marginBottom: 16,
         }}>
-          · Your Transformation Awaits ·
+          · Visit Sport Life ·
         </div>
         
         <h2 style={{
@@ -40,16 +40,16 @@ function Cta() {
           color: "var(--fg1)",
           marginBottom: 24
         }}>
-          Ready to build the <span style={{ color: "var(--accent)" }}>ultimate</span> version of you?
+          Come see it <span style={{ color: "var(--accent)" }}>for yourself.</span>
         </h2>
-        
+
         <p style={{ fontSize: 18, color: "var(--fg2)", lineHeight: 1.5, marginBottom: 40, maxWidth: 600 }}>
-          Join the elite community at Raw Fitness. Get your tailored plan today and start seeing results tomorrow.
+          Walk into Sport Life Fitness Club for a free facility tour. Premium floors, spotless equipment, and coaches ready to guide you from your very first session.
         </p>
-        
+
         <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center" }}>
           <Button variant="primary" size="lg" iconRight={<Icon_ArrowRight size={18} />} onClick={() => window.navigateTo('Contact')}>
-            Claim Your Spot
+            Book a Free Tour
           </Button>
           <Button variant="secondary" size="lg" onClick={() => window.navigateTo('Pricing')}>
             View Membership Plans

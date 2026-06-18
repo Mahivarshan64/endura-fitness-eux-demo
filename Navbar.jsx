@@ -56,7 +56,7 @@ function Navbar({ activeLink = "Features", onLinkClick = () => {} }) {
             fontWeight: 900, fontSize: 18, letterSpacing: "0.01em",
             textTransform: "uppercase", lineHeight: 1,
           }}>
-            Raw Fitness
+            Sport Life
           </span>
         </a>
 
@@ -99,7 +99,7 @@ function Navbar({ activeLink = "Features", onLinkClick = () => {} }) {
         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
           <div className="mmm-desktop-nav">
             <Button size="md" variant="primary" iconRight={<Icon_ArrowRight size={16} />} onClick={() => window.navigateTo('Pricing')}>
-              Join the Elite
+              Become a Member
             </Button>
           </div>
           <button
@@ -152,7 +152,7 @@ function Navbar({ activeLink = "Features", onLinkClick = () => {} }) {
               <Button size="lg" variant="primary" fullWidth
                       iconRight={<Icon_ArrowRight size={18} />}
                       onClick={() => { setMobileOpen(false); window.navigateTo('Pricing'); }}>
-                Join the Elite
+                Become a Member
               </Button>
             </div>
           </div>
