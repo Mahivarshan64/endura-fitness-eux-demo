@@ -1,6 +1,6 @@
-# Sport Life Fitness Club — Landing UI Kit
+# Endura Fitness Studio — Landing UI Kit
 
-The marketing landing page for **Sport Life Fitness Club**, a premium, multi-floor unisex fitness center in Hyderabad (Sophria Plaza). Rated 4.9/5 from 1,000+ reviews for cleanliness, professional coaching, and a welcoming community.
+The marketing landing page for **Endura Fitness Studio**, a premium unisex A/C gym in Dindigul (Suzuki Showroom). Rated 4.9/5 from reviews for friendly coaching, quality equipment, and a motivating community.
 
 ## Files
 

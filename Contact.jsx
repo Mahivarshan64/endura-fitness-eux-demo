@@ -23,7 +23,7 @@ function Contact() {
           textWrap: "balance",
           marginBottom: 48
         }}>
-          Ready to start at Sport Life?
+          Ready to start at Endura?
         </h2>
 
         <div style={{
@@ -74,16 +74,16 @@ function Contact() {
               </p>
 
               <div style={{ display: "grid", gap: 24 }}>
-                <a href="https://www.google.com/maps/search/?api=1&query=Sport+Life+Fitness+Club+Sophria+Plaza+Hyderabad" target="_blank" rel="noopener noreferrer" style={{ display: "flex", gap: 16, textDecoration: "none" }}>
+                <a href="https://www.google.com/maps/search/?api=1&query=Endura+Fitness+Studio+Suzuki+Showroom+Dindigul" target="_blank" rel="noopener noreferrer" style={{ display: "flex", gap: 16, textDecoration: "none" }}>
                   <div style={{ width: 48, height: 48, borderRadius: 12, background: "var(--surface-2)", border: "1px solid var(--border)", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--accent)", flexShrink: 0 }}>
                     <Icon_MapPin size={24} />
                   </div>
                   <div>
                     <div style={{ fontWeight: 600, color: "var(--fg1)", marginBottom: 4 }}>Location</div>
                     <div style={{ color: "var(--fg2)", lineHeight: 1.5 }}>
-                      1st Floor, Pillar No 86, Sophria Plaza,<br />
-                      beside Sophria Private Limited, 13-6-431/D/88,<br />
-                      Hyderabad, Telangana 500006
+                      1st Floor, Suzuki Showroom, No 34A,<br />
+                      Palani Rd, Pandian Nagar, New Agraharam,<br />
+                      Nehruji Nagar, Dindigul, Tamil Nadu 624001
                     </div>
                   </div>
                 </a>
@@ -94,7 +94,7 @@ function Contact() {
                   </div>
                   <div>
                     <div style={{ fontWeight: 600, color: "var(--fg1)", marginBottom: 4 }}>Phone</div>
-                    <a href="tel:+916303889740" style={{ color: "var(--fg2)", fontFamily: "var(--font-mono)", textDecoration: "none" }}>063038 89740</a>
+                    <a href="tel:+919965511102" style={{ color: "var(--fg2)", fontFamily: "var(--font-mono)", textDecoration: "none" }}>099655 11102</a>
                   </div>
                 </div>
 
@@ -104,7 +104,7 @@ function Contact() {
                   </div>
                   <div>
                     <div style={{ fontWeight: 600, color: "var(--fg1)", marginBottom: 4 }}>Hours</div>
-                    <div style={{ color: "var(--fg2)" }}>Open daily · 5:00 AM – 11:30 PM</div>
+                    <div style={{ color: "var(--fg2)" }}>Mon-Sat · 5:00 AM – 10:00 PM</div>
                   </div>
                 </div>
 
@@ -114,7 +114,7 @@ function Contact() {
                   </div>
                   <div>
                     <div style={{ fontWeight: 600, color: "var(--fg1)", marginBottom: 4 }}>Email</div>
-                    <a href="mailto:hello@sportlifefitness.in" style={{ color: "var(--fg2)", textDecoration: "none" }}>hello@sportlifefitness.in</a>
+                    <a href="mailto:hello@endurafitness.in" style={{ color: "var(--fg2)", textDecoration: "none" }}>hello@endurafitness.in</a>
                   </div>
                 </div>
               </div>
@@ -134,14 +134,14 @@ function Contact() {
 
           <div style={{ display: "grid", gap: 16 }}>
             {[
-              { q: "Can I tour the gym before joining?", a: "Absolutely. Walk in any day until 11:30 PM, or book a tour and our front-desk team will show you every floor — no pressure, no obligation." },
-              { q: "Is Sport Life unisex and beginner friendly?", a: "Yes. We're a safe, unisex club that's proudly LGBTQ+ and partner-friendly. Our trainers and front desk make sure first-timers feel comfortable from day one." },
-              { q: "How do you maintain hygiene?", a: "Equipment is sanitised through the day, floors are cleaned regularly, and every level is well-ventilated. Clean, fresh facilities are what members rate us highest for." },
-              { q: "What's included in membership?", a: "Membership covers full access to all floors, lockers, and showers. Higher tiers add personal coaching, custom plans, and priority on classes." },
-              { q: "Do you offer personal training?", a: "Yes. Our certified, motivating coaches provide one-on-one programmes with form correction, progress tracking, and accountability tailored to your goal." },
-              { q: "What are your timings?", a: "We're open daily from early morning until 11:30 PM, so you can train before work, late at night, or any time in between." },
-              { q: "Is there parking and easy access?", a: "We're on the 1st floor of Sophria Plaza (Pillar No 86), Hyderabad — easy to reach, with the entrance beside Sophria Private Limited." },
-              { q: "Can couples or partners train together?", a: "Of course. Many members train as partners or couples — the unisex layout and multiple floors give everyone space and a welcoming vibe." },
+              { q: "Can I tour the gym before joining?", a: "Absolutely. Walk in any day during our hours, or book a tour and our friendly front-desk team will show you around — no pressure, no obligation." },
+              { q: "Is Endura unisex and beginner friendly?", a: "Yes. We're a safe, unisex A/C club that's welcoming to couples and beginners. Our friendly trainers make sure first-timers feel comfortable from day one." },
+              { q: "How do you maintain quality facilities?", a: "We provide a fully air-conditioned, clean environment with sanitised equipment, well-ventilated areas, and friendly staff ensuring comfort throughout the day." },
+              { q: "What's included in membership?", a: "Membership covers full access to our unisex A/C gym floor, equipment, lockers, and showers. Higher tiers include friendly coaching and customized diet charts." },
+              { q: "Do you offer personal training?", a: "Yes. Our friendly coaches, including certified female trainers, offer personal training with customized weight loss and bodybuilding programs tailored to you." },
+              { q: "What are your timings?", a: "We are open from Monday to Saturday, opening early at 5:00 AM so you can train before work or later in the day depending on your personal schedule." },
+              { q: "Is there parking and easy access?", a: "We are conveniently located on the 1st Floor above the Suzuki Showroom on Palani Road in Dindigul, with easy parking and direct access for members." },
+              { q: "Can couples or partners train together?", a: "Of course. Many members train as partners or couples — our unisex layout and friendly coaching staff give everyone space and a welcoming atmosphere." },
             ].map((faq, i) => (
               <FaqItem key={i} faq={faq} />
             ))}

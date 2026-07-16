@@ -7,11 +7,11 @@ const TIERS = [
     name: "Basic",
     price: "₹2,999",
     period: "/month",
-    description: "Essential access for independent lifters.",
+    description: "Essential access to our unisex A/C gym floor.",
     features: [
-      "Gym access 24/7",
+      "Gym access during hours",
       "Locker facility",
-      "2 trainer consultations/month"
+      "1 trainer consultation/month"
     ],
     highlight: false,
   },
@@ -19,13 +19,13 @@ const TIERS = [
     name: "Elite",
     price: "₹7,999",
     period: "/month",
-    description: "The ultimate transformation package.",
+    description: "Personal training and full weight loss packages.",
     features: [
       "Everything in Premium",
       "4 1-on-1 training sessions/week",
-      "Custom meal plans",
-      "Exclusive CrossFit access",
-      "Priority access to all classes"
+      "Customized diet charts & plans",
+      "Bodybuilding & fitness gear",
+      "Priority access to trainers"
     ],
     highlight: true,
   },
@@ -33,12 +33,12 @@ const TIERS = [
     name: "Premium",
     price: "₹4,999",
     period: "/month",
-    description: "Guided training for serious results.",
+    description: "Guided bodybuilding and general fitness coaching.",
     features: [
       "Everything in Basic",
       "Personalized training plan",
-      "Diet consultation",
-      "Priority class booking"
+      "Detailed diet charts",
+      "Friendly coach guidance"
     ],
     highlight: false,
   }
@@ -133,7 +133,7 @@ function Pricing() {
             Memberships for everyone.
           </h2>
           <p style={{ marginTop: 20, fontSize: 17, color: "var(--fg2)", lineHeight: 1.6 }}>
-            Full access to every floor, clean facilities, and a welcoming team — no joining pressure, cancel anytime. Not sure yet? Book a free tour first.
+            Full access to our A/C facility, quality equipment, and friendly trainers — no pressure, cancel anytime. Book a tour or call to get started.
           </p>
         </div>
 

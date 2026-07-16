@@ -28,7 +28,7 @@ function Cta() {
           fontSize: 13, fontWeight: 600, letterSpacing: "0.18em",
           textTransform: "uppercase", color: "var(--accent)", marginBottom: 16,
         }}>
-          · Visit Sport Life ·
+          · Visit Endura ·
         </div>
         
         <h2 style={{
@@ -44,7 +44,7 @@ function Cta() {
         </h2>
 
         <p style={{ fontSize: 18, color: "var(--fg2)", lineHeight: 1.5, marginBottom: 40, maxWidth: 600 }}>
-          Walk into Sport Life Fitness Club for a free facility tour. Premium floors, spotless equipment, and coaches ready to guide you from your very first session.
+          Walk into Endura Fitness Studio for a free facility tour. Modern A/C space, quality equipment, and friendly coaches ready to guide you from your very first session.
         </p>
 
         <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center" }}>

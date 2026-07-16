@@ -5,19 +5,19 @@ function Faq() {
   const faqs = [
     {
       q: "Do I need experience to start?",
-      a: "Not at all. Sport Life is welcoming and beginner-friendly — our coaches assess where you are and build a safe plan that grows with you, with hands-on guidance every step."
+      a: "Not at all. Endura is welcoming and beginner-friendly — our coaches assess where you are and build a safe plan that grows with you, with friendly guidance every step."
     },
     {
       q: "How clean is the gym?",
-      a: "Spotless. Equipment is sanitised through the day and every floor is well-ventilated and regularly cleaned. It's the thing our members rate us highest for."
+      a: "Spotless. Equipment is sanitised through the day, and our unisex A/C gym is well-ventilated and regularly cleaned. Our members rate our hygiene extremely high."
     },
     {
       q: "Is it a unisex, inclusive space?",
-      a: "Yes — a safe, unisex club that's proudly LGBTQ+ and partner-friendly. Everyone trains comfortably across our multiple, spacious floors."
+      a: "Yes — a safe, unisex A/C gym that is highly inclusive. Everyone trains comfortably in a positive, welcoming, and friendly atmosphere."
     },
     {
       q: "What are your hours?",
-      a: "We're open daily from early morning until 11:30 PM, so you can train whenever it suits you — before work, late evening, or anytime in between."
+      a: "We are open Monday to Saturday, opening early at 5:00 AM, so you can train whenever it suits you best — before work, in the afternoon, or evening."
     }
   ];
 

@@ -92,7 +92,7 @@ function Gallery() {
           </h2>
           <p style={{ fontSize: 17, color: "var(--fg2)", lineHeight: 1.65, maxWidth: 560, margin: "0 auto" }}>
             Every photo tells a story of discipline, consistency, and a community that refuses to let you quit.
-            These are Sport Life members — no filters, no tricks. Just dedicated work and time.
+            These are Endura members — no filters, no tricks. Just dedicated work and time.
           </p>
         </div>
 

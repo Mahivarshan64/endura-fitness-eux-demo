@@ -96,7 +96,7 @@ function Hero() {
               lineHeight: 1.5,
               maxWidth: 560,
             }}>
-              Sport Life Fitness Club — Hyderabad's premium, multi-floor unisex club. Spotless, fully equipped, and welcoming to every body, with coaches who make the difference.
+              Endura Fitness Studio — Dindigul's premium unisex A/C gym. Motivating atmosphere, quality equipment, and friendly coaching to help you build strength and confidence.
             </p>
 
             <div style={{ display: "flex", gap: 12, marginTop: 36, flexWrap: "wrap" }}>
@@ -173,8 +173,8 @@ function Hero() {
         }}>
           {[
             { v: "4.9★",       l: "Google Rating" },
-            { v: "1,000+",     l: "Five-Star Reviews" },
-            { v: "Multi-Floor", l: "Unisex Club" },
+            { v: "Friendly",   l: "Expert Coaches" },
+            { v: "Unisex A/C", l: "Fitness Gym" },
           ].map((s) => (
             <div key={s.l} style={{ display: "flex", alignItems: "baseline", gap: 12 }}>
               <div style={{

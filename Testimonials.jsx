@@ -4,19 +4,19 @@
 
 const TESTIMONIALS = [
   {
-    body: "Easily the cleanest gym I've trained in. Equipment is wiped down through the day and every floor is well ventilated — you can tell hygiene is taken seriously here.",
+    body: "Easily the cleanest gym in Dindigul. Equipment is wiped down and the A/C space is perfectly ventilated — you can tell hygiene and comfort are taken seriously here.",
     author: "Sai Teja",
     role: "Member · 1 year",
     rating: 5,
   },
   {
-    body: "The trainers are professional and genuinely motivating. They fix your form, track your progress, and never make you feel out of place. Best coaching I've had in Hyderabad.",
+    body: "The trainers are professional and genuinely motivating. They fix your form, track your progress, and never make you feel out of place. Best coaching I've had in Dindigul.",
     author: "Divya R.",
     role: "Member · 8 months",
     rating: 5,
   },
   {
-    body: "As a couple we wanted a safe, unisex space — Sport Life is exactly that. It's spread over multiple floors so it never feels crowded. Great vibe for everyone.",
+    body: "As a couple we wanted a safe, unisex space — Endura is exactly that. It's got premium A/C zones and a very motivating vibe. Great atmosphere for everyone.",
     author: "Arjun & Meghana",
     role: "Members · 6 months",
     rating: 5,
@@ -28,7 +28,7 @@ const TESTIMONIALS = [
     rating: 5,
   },
   {
-    body: "A huge multi-floor setup with premium equipment for everything — strength, cardio, functional. I never have to wait for a machine, even at peak hours.",
+    body: "A premium unisex A/C setup with quality equipment for everything — strength, cardio, functional. I never have to wait for a machine, even at peak hours.",
     author: "Praveen K.",
     role: "Member · 2 years",
     rating: 5,
@@ -137,7 +137,7 @@ function Testimonials() {
               marginBottom: 20,
             }}>
               {/* eslint-disable-next-line react/jsx-no-literals */}
-              Loved across Hyderabad.
+              Loved across Dindigul.
             </h2>
 
             {/* Prominent rating badge */}

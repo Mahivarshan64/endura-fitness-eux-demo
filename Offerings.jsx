@@ -1,52 +1,52 @@
 /* eslint-disable */
 /* global React, Icon_Dumbbell, Icon_Layers, Icon_Sparkles, Icon_Heart, Icon_ArrowRight */
-// The Sport Life Standard — facility highlights built on the brand pillars.
+// The Endura Standard — facility highlights built on the brand pillars.
 // 4-card interactive grid. Hover: card raises, border lights to red, icon fills red.
 
 const OFFERINGS = [
   {
     icon: "dumbbell",
-    title: "Elite Coaching & Support",
-    blurb: "Certified, motivating trainers who give you real one-on-one attention — correcting form, tracking progress, and keeping you accountable every session.",
-    benefits: ["Personalised programmes for your goal", "Hands-on form correction & safety", "Constant motivation, zero judgement"],
-    included: "Goal assessment, structured plans, and a coach who knows your name.",
-    proof: "Personal attention",
+    title: "Friendly Coaching & Training",
+    blurb: "Get expert guidance from our friendly coaches, including certified female trainers, dedicated to building your confidence and correcting form.",
+    benefits: ["Friendly coaching for all levels", "Certified male & female trainers", "Personal attention, zero judgement"],
+    included: "Form correction, structured exercises, and a positive, supportive environment.",
+    proof: "Expert coaches",
     cta: "Meet the coaches",
     page: "About",
     tag: "01 · Coaching",
   },
   {
     icon: "layers",
-    title: "Spacious Multi-Floor Club",
-    blurb: "A massive, well-organised space across multiple floors — premium strength racks, full cardio arrays, and room to train without waiting in line.",
-    benefits: ["Multiple dedicated training floors", "Premium strength & cardio equipment", "Open layout, never overcrowded"],
-    included: "Free weights, machines, functional zones, and a high-energy cardio deck.",
-    proof: "Multi-floor",
+    title: "Premium Unisex A/C Gym",
+    blurb: "Train comfortably in our fully air-conditioned facility at Dindigul, featuring high-quality equipment, clean zones, and a friendly vibe.",
+    benefits: ["Fully air-conditioned workout space", "High-quality strength & cardio gear", "Safe, clean & unisex environment"],
+    included: "Modern cardio decks, heavy free-weight zones, and clean locker rooms.",
+    proof: "Unisex A/C Gym",
     cta: "See the space",
     page: "Gallery",
     tag: "02 · Facility",
   },
   {
     icon: "sparkles",
-    title: "Impeccable Hygiene",
-    blurb: "Cleanliness is non-negotiable. Equipment is sanitised through the day and every floor is ventilated to keep the air — and the iron — fresh.",
-    benefits: ["Equipment sanitised through the day", "Bright, well-ventilated floors", "Spotless changing rooms & showers"],
-    included: "The spotless, fresh environment our members rate us highest for.",
-    proof: "Spotless daily",
-    cta: "Take a tour",
+    title: "Diet & Weight Loss Programs",
+    blurb: "Achieve lasting results with customized nutrition plans. Our coaches design detailed diet charts tailored to your lifestyle and weight goals.",
+    benefits: ["Customised daily diet charts", "Targeted weight loss tracking", "Healthy, sustainable nutrition"],
+    included: "Regular body composition checks, meal plans, and ongoing dietary guidance.",
+    proof: "Diet & Weight Loss",
+    cta: "Start your plan",
     page: "Contact",
-    tag: "03 · Hygiene",
+    tag: "03 · Nutrition",
   },
   {
     icon: "heart",
-    title: "Welcoming For Everyone",
-    blurb: "From the front desk to the floor, you belong here — a safe, unisex space that's proudly LGBTQ+ friendly and perfect for training partners.",
-    benefits: ["Friendly, hassle-free onboarding", "Safe unisex & partner-friendly", "Proudly LGBTQ+ inclusive"],
-    included: "A community that greets you by name from your very first visit.",
-    proof: "All welcome",
+    title: "Bodybuilding & Fitness",
+    blurb: "Whether you want to build muscle, tone up, or maintain general fitness, our team provides the equipment and training programs to succeed.",
+    benefits: ["Advanced bodybuilding setups", "General health & fitness plans", "Highly motivating environment"],
+    included: "Access to all strength machinery, cardio stations, and motivating trainers.",
+    proof: "Build & Fit",
     cta: "Get started",
     page: "Contact",
-    tag: "04 · Community",
+    tag: "04 · Fitness",
   },
 ];
 
@@ -175,7 +175,7 @@ function Offerings() {
               fontSize: 13, fontWeight: 600, letterSpacing: "0.18em",
               textTransform: "uppercase", color: "var(--accent)", marginBottom: 12,
             }}>
-              · The Sport Life Standard
+              · The Endura Standard
             </div>
             <h2 style={{
               fontFamily: "var(--font-display)",
@@ -188,7 +188,7 @@ function Offerings() {
             </h2>
           </div>
           <p style={{ maxWidth: 360, fontSize: 16, color: "var(--fg2)", lineHeight: 1.55 }}>
-            Elite coaching, a spotless multi-floor club, and a front desk that welcomes everyone — the four things 1,000+ members keep reviewing us for.
+            Friendly coaching, a premium unisex A/C gym, custom diet plans, and dedicated fitness support — the pillars that help you reach your goals.
           </p>
         </div>
 

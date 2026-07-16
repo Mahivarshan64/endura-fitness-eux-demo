@@ -3,9 +3,9 @@
 // Location & Hours split section + footer.
 
 const HOURS = [
-  { day: "Monday — Friday", time: "05:00 — 23:30" },
-  { day: "Saturday",        time: "06:00 — 23:30" },
-  { day: "Sunday",          time: "06:00 — 23:30" },
+  { day: "Monday — Friday", time: "05:00 — 22:00" },
+  { day: "Saturday",        time: "05:00 — 22:00" },
+  { day: "Sunday",          time: "Closed" },
 ];
 
 const PEAK = [
@@ -35,7 +35,7 @@ function HoursColumn() {
         fontWeight: 900, fontSize: 32, lineHeight: 1, letterSpacing: "-0.01em",
         textTransform: "uppercase",
       }}>
-        Open Daily until <span style={{ color: "var(--accent)" }}>11:30 PM</span>
+        Open Mon-Sat from <span style={{ color: "var(--accent)" }}>5:00 AM</span>
       </h3>
 
       <div style={{ marginTop: 28, display: "grid", gap: 10 }}>
@@ -104,7 +104,7 @@ function ContactColumn() {
           letterSpacing: "-0.02em", textTransform: "uppercase",
           color: "var(--fg-on-accent)",
         }}>
-          Train where Hyderabad gets stronger.
+          Train where Dindigul gets stronger.
         </h3>
       </div>
 
@@ -119,9 +119,9 @@ function ContactColumn() {
             <Icon_MapPin size={18} />
           </div>
           <div style={{ fontSize: 14, lineHeight: 1.55, fontWeight: 500 }}>
-            1st Floor, Pillar No 86, Sophria Plaza,<br />
-            beside Sophria Private Limited, 13-6-431/D/88,<br />
-            Hyderabad, Telangana 500006
+            1st Floor, Suzuki Showroom, No 34A,<br />
+            Palani Rd, Pandian Nagar, New Agraharam,<br />
+            Nehruji Nagar, Dindigul, Tamil Nadu 624001
           </div>
         </div>
 
@@ -134,8 +134,8 @@ function ContactColumn() {
           }}>
             <Icon_Phone size={18} />
           </div>
-          <a href="tel:+916303889740" style={{ fontFamily: "var(--font-mono)", fontSize: 15, fontWeight: 500, lineHeight: 1.7, color: "var(--fg-on-accent)", textDecoration: "none" }}>
-            063038 89740
+          <a href="tel:+919965511102" style={{ fontFamily: "var(--font-mono)", fontSize: 15, fontWeight: 500, lineHeight: 1.7, color: "var(--fg-on-accent)", textDecoration: "none" }}>
+            099655 11102
           </a>
         </div>
       </div>
@@ -220,20 +220,20 @@ function Footer() {
             {
               icon: <Icon_MapPin size={18} />,
               label: "Visit",
-              value: "1st Floor, Sophria Plaza, 13-6-431/D/88, Hyderabad, Telangana 500006",
-              href: "https://www.google.com/maps/search/?api=1&query=Sport+Life+Fitness+Club+Sophria+Plaza+Hyderabad",
+              value: "1st Floor, Suzuki Showroom, No 34A, Palani Rd, Pandian Nagar, New Agraharam, Nehruji Nagar, Dindigul, Tamil Nadu 624001",
+              href: "https://www.google.com/maps/search/?api=1&query=Endura+Fitness+Studio+Suzuki+Showroom+Dindigul",
               external: true,
             },
             {
               icon: <Icon_Clock size={18} />,
               label: "Hours",
-              value: "Open daily · 5:00 AM – 11:30 PM",
+              value: "Mon-Sat · 5:00 AM – 10:00 PM",
             },
             {
               icon: <Icon_Phone size={18} />,
               label: "Call",
-              value: "063038 89740",
-              href: "tel:+916303889740",
+              value: "099655 11102",
+              href: "tel:+919965511102",
             },
           ].map((info) => {
             const inner = (
@@ -292,10 +292,10 @@ function Footer() {
               <span style={{
                 fontFamily: "var(--font-display)", fontWeight: 900,
                 fontSize: 20, textTransform: "uppercase", letterSpacing: "0.01em",
-              }}>Sport Life</span>
+              }}>Endura</span>
             </a>
             <p style={{ marginTop: 16, color: "var(--fg2)", fontSize: 14, lineHeight: 1.6, maxWidth: 360 }}>
-              Hyderabad's premium, multi-floor unisex fitness club — spotless, fully equipped, and welcoming to every body.
+              Dindigul's premium unisex A/C gym — motivating atmosphere, quality equipment, and welcoming to all.
             </p>
             <div style={{ display: "flex", gap: 8, marginTop: 24 }}>
               <button style={socialBtn} aria-label="Instagram"><Icon_Instagram size={18} /></button>
@@ -306,7 +306,7 @@ function Footer() {
 
           <FooterColumn title="Train" links={["Personal Training", "Group Classes", "Cardio Floor", "Strength Zone"]} />
           <FooterColumn title="Visit"  links={["Location", "Contact", "Facility Tour"]} />
-          <FooterColumn title="Members" links={["Join Sport Life", "Pricing", "Refer a Friend", "FAQ"]} />
+          <FooterColumn title="Members" links={["Join Endura", "Pricing", "Refer a Friend", "FAQ"]} />
         </div>
 
         <div style={{
@@ -315,7 +315,7 @@ function Footer() {
           gap: 16, flexWrap: "wrap",
         }}>
           <div style={{ color: "var(--fg3)", fontSize: 13 }}>
-            © 2026 Sport Life Fitness Club. All rights reserved.
+            © 2026 Endura Fitness Studio. All rights reserved.
           </div>
           <div style={{ display: "flex", gap: 24 }}>
             <a href="#" style={{ ...linkStyle, color: "var(--fg3)", fontSize: 13 }}>Privacy</a>

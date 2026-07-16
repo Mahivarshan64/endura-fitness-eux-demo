@@ -4,26 +4,26 @@
 
 const SCHEDULE_DATA = [
   {
-    type: "Strength",
-    timings: "06:00 - 09:00, 17:00 - 21:00",
+    type: "Bodybuilding & Fitness",
+    timings: "05:00 - 10:00, 16:00 - 21:00",
     instructor: "Raj Kumar",
     experience: "10 years"
   },
   {
-    type: "Cardio & Endurance",
+    type: "Weight Loss & Dieting",
     timings: "Morning + Evening batches",
     instructor: "Priya Sharma",
     experience: "8 years"
   },
   {
-    type: "CrossFit",
-    timings: "Specialized timings",
+    type: "Personal Training",
+    timings: "Flexible Timings",
     instructor: "Arjun Singh",
     experience: "12 years"
   },
   {
-    type: "Yoga & Flexibility",
-    timings: "Morning session",
+    type: "General Fitness",
+    timings: "05:00 - 10:00, 16:00 - 21:00",
     instructor: "Ananya Gupta",
     experience: "6 years"
   }
